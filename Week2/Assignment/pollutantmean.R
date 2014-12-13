@@ -7,6 +7,8 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
                         file_name <- paste("00", i, sep = '')
                 } else if (file_len == 2) {
                         file_name <- paste("0", i, sep = '')
+                } else {
+                        file_name <- i
                 }
           # create full file name
           file_name_ext <- paste(file_name, ".csv", sep = '')
