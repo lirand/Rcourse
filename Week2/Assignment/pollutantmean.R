@@ -18,5 +18,5 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
           na_list <- is.na(file[,pollutant])
           sum <- c(sum, file[!na_list,pollutant])
   }
-  mean(round(sum,3))
+  round(mean(sum),3)
 }
